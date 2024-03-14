@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+    .left-column {
+        background-color: #5bb5d8;
+        height: 100vh; 
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .centered-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .welcome-text {
+      color: #000000;
+      font-family: Arial, sans-serif;
+    }
+    
+    </style>
+</head>
+<body>
+
+<div class="container-fluid h-100">
+    <div class="row h-100">
+        <div class="col-md-12 col-lg-4 order-md-1 order-lg-0 left-column">
+            <div class="welcome-text text-center p-4">
+              <h2>Bem-vindo(a) à loja Jonas TECH!</h2>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-8 order-md-0 order-lg-1 right-column d-flex align-items-center justify-content-center">
+            <form class="border p-4">
+                <div class="form-group">
+                    <label for="nomeInput">Nome</label>
+                    <input type="text" class="form-control" id="nomeInput" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">Email</label>
+                    <input type="email" class="form-control" id="emailInput" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmarEmailInput">Confirmar Email</label>
+                    <input type="email" class="form-control" id="confirmarEmailInput" required>
+                </div>
+                <div class="form-group">
+                    <label for="senhaInput">Senha</label>
+                    <input type="password" class="form-control" id="senhaInput" required>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Confirmar cadastro</button>
+                <div class="mt-3 text-center">
+                    <p>Já possuo cadastro? <a href="login.html">Entrar</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
